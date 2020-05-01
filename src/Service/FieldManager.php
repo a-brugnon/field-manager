@@ -32,6 +32,7 @@ class FieldManager {
           return $fieldAdapter->get($entity, $field);
         }
       }
+      return $entity->get($field);
     }
     return NULL;
   }
