@@ -2,7 +2,7 @@
 
 namespace Drupal\field_manager\Field;
 
-class EntityReference extends Field implements EntityReferenceFieldInterface {
+class EntityReferenceField extends Field implements EntityReferenceFieldInterface {
 
   public function fetchIds(){
     return array_map(function($a){ return $a['target_id'];}, $this->getEntityField()->getValue());

@@ -16,3 +16,16 @@ if($field insteaof EntityReferenceFieldInterface){
     var_dump($field->fetchEntity(0))
 }
 ```
+
+* If u are using an date range field
+```
+@var \Drupal\field_manager\Service\FieldManager $fieldManager */
+$fieldManager = Drupal::service('field_manager');
+$field = $fieldManager->get($node, 'field_event_date');
+if($field insteaof DateRangeFieldInterface){
+    // Will display all date in field format to FORMAT
+    var_dump($field->fetchValuesFormat(FORMAT));
+    // If exist, will display date of offset in field format to FORMAT
+    var_dump($field->fetchValueFormat(OFFSET, FORMAT));
+}
+```
