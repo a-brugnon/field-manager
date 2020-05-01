@@ -1,0 +1,10 @@
+services:
+  #Field Adapters
+  field_adapter.entity_reference:
+    class: Drupal\field_manager\Adapter\FieldAdapter\EntityReferenceAdapter
+    autowire: true
+
+  #Manager
+  field_manager:
+    class: Drupal\field_manager\Service\FieldManager
+    arguments: ['@field_adapter.entity_reference']

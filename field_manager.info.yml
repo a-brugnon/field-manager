@@ -1,0 +1,6 @@
+name: Field manager
+type: module
+description: Field manager
+package: AB
+core: 8.x
+core_version_requirement: ^8 || ^9

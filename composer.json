@@ -1,0 +1,12 @@
+{
+    "name": "ab/field_manage",
+    "license": "GPL-3.0-only",
+    "description": "Field manager service to help developers to manage field",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "AB",
+            "email": "arnaud.brugnon@gmail.com"
+        }
+    ]
+}
